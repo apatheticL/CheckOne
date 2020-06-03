@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="resetPass">Reset Password</string>
+    <string name="loginAs">Login as Adjodicator</string>
+    <string name="login">login</string>
+    <string name="title">HSA</string>
+</resources>
