@@ -6,39 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="@dimen/dp_48"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/constrainLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/titleApp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/acme"-->
+<!--            android:text="my"-->
+<!--            android:textColor="#29DBEC"-->
+<!--            android:textSize="48sp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/constrainLayout"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.794" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/titleAppOne"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/title"-->
+<!--            android:textSize="52sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/constrainLayout"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.823" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_48"
-        app:layout_constraintBottom_toTopOf="@+id/constrainLayout"
+        android:textSize="@dimen/sp_48"
+        app:layout_constraintBottom_toTopOf="@id/constrainLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/titleApp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/acme"
-            android:text="my"
-            android:textColor="#29DBEC"
-            android:textSize="48sp"
-            app:layout_constraintBottom_toTopOf="@+id/constrainLayout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.794" />
-
-        <TextView
-            android:id="@+id/titleAppOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textSize="52sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/constrainLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.823" />
-    </LinearLayout>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="myHSK"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constrainLayout"
@@ -84,6 +97,7 @@
             app:layout_constraintTop_toBottomOf="@id/editPass" />
 
         <Button
+            android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_24"
